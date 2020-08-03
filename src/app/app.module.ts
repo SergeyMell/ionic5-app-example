@@ -9,6 +9,10 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
+import {Plugins} from '@capacitor/core';
+const {Keyboard} = Plugins;
+import {Platform} from '@ionic/angular';
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -20,4 +24,17 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule {
+
+  constructor(private platform: Platform) {
+
+    console.log('TEST');
+    console.log('this.platform.platforms()');
+    alert(this.platform.platforms());
+
+    Keyboard.setAccessoryBarVisible({
+      isVisible: true
+    }).catch(() => {});
+  }
+
+}
