@@ -1,19 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { AuthSecondChildPage } from './auth-second-child.page';
+import { AuthSecondChildComponent } from './auth-second-child.component';
 
-describe('AuthSecondChildPage', () => {
-  let component: AuthSecondChildPage;
-  let fixture: ComponentFixture<AuthSecondChildPage>;
+describe('AuthSecondChildComponent', () => {
+  let component: AuthSecondChildComponent;
+  let fixture: ComponentFixture<AuthSecondChildComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AuthSecondChildPage ],
+      declarations: [ AuthSecondChildComponent ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(AuthSecondChildPage);
+    fixture = TestBed.createComponent(AuthSecondChildComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

@@ -6,6 +6,7 @@ import {FormsModule} from '@angular/forms';
 import {HomePageRoutingModule} from './home-routing.module';
 import {HomeFirstChildComponent} from './home-first-child/home-first-child.component';
 import {HomeSecondChildComponent} from './home-second-child/home-second-child.component';
+import {HomePage} from './home.page';
 
 
 @NgModule({
@@ -16,10 +17,7 @@ import {HomeSecondChildComponent} from './home-second-child/home-second-child.co
     HomePageRoutingModule
   ],
   declarations: [
-    HomeFirstChildComponent,
-    HomeSecondChildComponent
-  ],
-  entryComponents: [
+    HomePage,
     HomeFirstChildComponent,
     HomeSecondChildComponent
   ]
