@@ -1,39 +1,45 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Home
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-button (click)="navigateToAuthRoute('/auth')">Go to auth route</ion-button>
+  <ion-button routerLink="/home/home-first-child">Go to home-first-child route</ion-button>
+  <ion-button routerLink="/home/home-second-child">Go to home-second-child route</ion-button>
+  <router-outlet></router-outlet>
 
-  <div id="container">
-    <ion-grid>
-      <ion-row style="height: 500px !important; background-color: red;"></ion-row>
-      <ion-row>
-        <ion-col>
-          <ion-item>
-            <ion-label>Test</ion-label>
-            <ion-input></ion-input>
-          </ion-item>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col>
-          <ion-item>
-            <ion-label>Test2</ion-label>
-            <ion-input></ion-input>
-          </ion-item>
-        </ion-col>
-      </ion-row>
-      <ion-row style="height: 500px !important; background-color: red;"></ion-row>
-    </ion-grid>
 
-  </div>
+<!--  <ion-header collapse="condense">-->
+<!--    <ion-toolbar>-->
+<!--      <ion-title size="large">Blank</ion-title>-->
+<!--    </ion-toolbar>-->
+<!--  </ion-header>-->
+
+<!--  <div id="container">-->
+<!--    <ion-grid>-->
+<!--      <ion-row style="height: 500px !important; background-color: red;"></ion-row>-->
+<!--      <ion-row>-->
+<!--        <ion-col>-->
+<!--          <ion-item>-->
+<!--            <ion-label>Test</ion-label>-->
+<!--            <ion-input></ion-input>-->
+<!--          </ion-item>-->
+<!--        </ion-col>-->
+<!--      </ion-row>-->
+<!--      <ion-row>-->
+<!--        <ion-col>-->
+<!--          <ion-item>-->
+<!--            <ion-label>Test2</ion-label>-->
+<!--            <ion-input></ion-input>-->
+<!--          </ion-item>-->
+<!--        </ion-col>-->
+<!--      </ion-row>-->
+<!--      <ion-row style="height: 500px !important; background-color: red;"></ion-row>-->
+<!--    </ion-grid>-->
+
+<!--  </div>-->
 </ion-content>
