@@ -1,12 +1,12 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>auth</ion-title>
+    <ion-title>Auth</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-button (click)="navigateToHomeRoute('/home')">Go to home route</ion-button>
-  <ion-button routerLink="auth-first-child">Go to <b>auth-first-child</b> route</ion-button>
-  <ion-button routerLink="auth-second-child">Go to <b>auth-second-child</b> route</ion-button>
+  <ion-button routerLink="/auth/auth-first-child">Go to <b>auth-first-child</b> route</ion-button>
+  <ion-button routerLink="/auth/auth-second-child">Go to <b>auth-second-child</b> route</ion-button>
   <router-outlet></router-outlet>
 </ion-content>
